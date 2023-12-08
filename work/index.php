@@ -24,7 +24,7 @@ require("./{$work}/filepointer.php");
             foreach($filelist as $key => $value){
                 echo ("<p>");
                 echo("<a href=");
-                echo("../instructions.php/?work={$work}/?instructions={$value}");
+                echo("../{$work}/instructions.php/?instructions={$value}");
                 echo(">{$key}</a></p>");
             }
             ?>

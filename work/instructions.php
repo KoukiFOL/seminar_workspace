@@ -1,27 +1,23 @@
+<?php require('../../frames/urlpointer3.php'); ?>
+<?php require("../../frames/header.php"); ?>
+<?php require("./filepointer.php"); ?>
+
 <?php
-if(isset($_GET['work'])){
-    $work = $_GET['work'];
+if(isset($_GET['instructions'])){
+    $instructions = $_GET['instructions'];
 }
-
-if(isset($_GET['instruction'])){
-    $instruction = $_GET['instruction'];
-}
-
 ?>
 
 <?php
-//controller
-require("../frames/urlpointer2.php");
-require("../frames/header.php");
-require("../work/{$work}/filepointer.php");
+$titlet=false;
+foreach($filelist as $key => $val){
+    if($val == $instructions){
+        $title = $key;
+    }
+}
 ?>
 
-
-
-
-<!-- view -->
-<html>
-    <body>
-        <h2><?php echo(array_search($instruction, $filelist)) ?></h2>
-    </body>
-</html>
+<body>
+    <h2><?php echo($title); ?></h2>
+    <p><?php include("./{$instructions}"); ?></p>
+</body>
