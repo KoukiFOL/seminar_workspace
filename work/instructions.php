@@ -20,4 +20,7 @@ foreach($filelist as $key => $val){
 <body>
     <h2><?php echo($title); ?></h2>
     <p><?php include("./{$instructions}"); ?></p>
+    <!--
+    <p style="text-align:center ; color:blue;"><a href="./work/index.php/?work=1">シナリオへ戻る</a></p>
+    -->
 </body>

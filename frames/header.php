@@ -16,9 +16,11 @@
         </div>
         <ul class="navi">
             <li><a href="<?php echo($home);?>">HOME</a></li>
-            <li><a href="<?php echo($work1);?>">Work1</a></li>
+            <li><a href="<?php echo($work1);?>">Work</a></li>
+	<!--
             <li><a href="<?php echo($work2);?>">Work2</a></li>
             <li><a href="<?php echo($work3);?>">Work3</a></li>
+	-->
             <!-- <li><a href=""></a><li> -->
         </ul>
     </body>

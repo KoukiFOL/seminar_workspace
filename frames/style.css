@@ -5,6 +5,7 @@ body{
     margin: 0;
     color: rgb(0, 0, 0);
     font-family:'ＭＳ 明朝';
+    margin-bottom: 40px;
   }
   
   /* ヘッダーの装飾*/
@@ -31,11 +32,12 @@ body{
     ul {
       display:flex ;
       margin-right:20px ;
+      font-size: 40px;
     }
     li {
       margin: auto;
       list-style: none;
-      font-size: 200%;
+      font-size: 40px;
       color: rgb(0, 0, 0);
 
     }
@@ -92,12 +94,16 @@ td {
   padding:10px;
 }
 p{
-  text-align: center;
-  
   margin-left: 100px;
   margin-right: 100px;
   line-height: 200%;
 }
 .instructions a{
   color: blue;
+}
+.instructions el{
+  background-color: #ffffff5f;
+}
+.instructions li{
+  font-size: 50px;
 }
